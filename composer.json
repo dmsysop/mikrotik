@@ -13,10 +13,10 @@
 	  "extra": {
       "laravel": {
         "providers": [
-        "dmsysop\\MikrotikApi\\MikrotikServiceProvider::class"
+          "dmsysop\\MikrotikApi\\MikrotikServiceProvider"
         ],
         "aliases": {
-        "Mikrotik": "dmsysop\\MikrotikApi\\Facades\\MikrotikFacade::class"
+          "Mikrotik": "dmsysop\\MikrotikApi\\Facades\\MikrotikFacade::class"
         }
       }
 	  },
