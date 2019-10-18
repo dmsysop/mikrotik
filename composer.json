@@ -1,0 +1,37 @@
+{
+    "name": "dmsysop/mikrotik-api",
+    "description": "Laravel Mikrotik API Wrapper - by JJSquady",
+    "require": {
+        "pear2/net_routeros": "1.0.0b5",
+        "pear2/net_transmitter": "1.0.0a5"
+    },
+    "require-dev": {
+        "laravel/framework": "5.8.*",
+        "phpunit/phpunit": "~7.0",
+        "orchestra/testbench": "~3.8"
+    },
+	  "extra": {
+      "laravel": {
+        "providers": [
+        "dmsysop\\MikrotikApi\\MikrotikServiceProvider::class"
+        ],
+        "aliases": {
+        "Mikrotik": "dmsysop\\MikrotikApi\\Facades\\MikrotikFacade::class"
+        }
+      }
+	  },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Douglas M",
+            "email": "douglasm@outlook.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "dmsysop\\MikrotikApi\\": "src/",
+        "dmsysop\\MikrotikApi\\Tests\\": "tests/"
+      }
+    },
+    "minimum-stability": "dev"
+}
